@@ -4,3 +4,6 @@
 `docker compose up --build`
 
 `python manage.py migrate`
+
+`python manage.py createsuperuser`
+
