@@ -29,6 +29,13 @@ tutorial https://www.youtube.com/watch?v=rHux0gMZ3Eg
 
 `python manage.py startapp playground`
 
+
+### auth setup
+https://www.youtube.com/watch?v=ipg9WPY3Its
+
+
+
+
 ### /Setup
 
 

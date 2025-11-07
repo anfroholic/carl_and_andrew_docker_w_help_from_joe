@@ -10,7 +10,7 @@ from django.urls import reverse
 from .models import *
 from django.contrib.auth import authenticate
 
-@login_required
+# @login_required
 def Home(request):
     return render(request, 'index.html')
 
