@@ -22,6 +22,8 @@ DATABASES = {
 `docker compose up --build`
 
 `python manage.py migrate`
+`python manage.py createsuperuser`
+
 
 tutorial https://www.youtube.com/watch?v=rHux0gMZ3Eg
 
