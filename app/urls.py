@@ -14,9 +14,39 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
+from django.conf import settings
+
+from django.shortcuts import redirect
+from django.conf.urls.static import static
+from django.contrib.sitemaps.views import sitemap
+
+from django.views.generic import TemplateView
+
 from django.contrib import admin
 from django.urls import path
 
+from django.urls import path, include, re_path
+
+from .views import (
+    # rate_limiter_view, 
+    view_404, 
+    # handler_403, 
+    home_view,
+    home_test,
+    ) #subscribe_view
+
+handler404 = view_404
+# handler403 = handler_403
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', home_view, name='home'),
+    path('test', home_test, name='test'),
+
+    # path('ratelimit-error/', rate_limiter_view, name='ratelimit-error'),
+    # path("__reload__/", include("django_browser_reload.urls")),
 ]
+
+
+urlpatterns += [ re_path(r'^.*/$', view_404, name='page_not_found'),]
