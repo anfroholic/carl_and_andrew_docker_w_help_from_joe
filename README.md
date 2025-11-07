@@ -19,8 +19,13 @@ DATABASES = {
     }
 }
 ```
+`docker compose up --build`
+
 `python manage.py migrate`
 
+tutorial https://www.youtube.com/watch?v=rHux0gMZ3Eg
+
+`python manage.py startapp playground`
 
 ### /Setup
 
