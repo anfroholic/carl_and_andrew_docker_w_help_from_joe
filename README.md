@@ -1,4 +1,5 @@
-# carl_and_andrew_django_w_help_from_joe
+# andrew_django_jwt
+
 
 https://github.com/docker/awesome-compose/tree/master/official-documentation-samples/django/
 
